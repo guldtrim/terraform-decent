@@ -1,3 +1,11 @@
+# Author: Roberth Lombardi
+# Company: Molnbolaget
+# CreationDate: 2021-12-19
+# Description:
+# This module will create a function app, along with vnet connection and application insights.
+# It will also connect the application insights connection string and instrumentation key to the functions app settings.
+# There's built-in functions for allowing the function to communicate with a keyvault via Azure AD group.
+
 resource "azurerm_function_app" "this" {
   name                       = var.function_app_name
   location                   = var.location
